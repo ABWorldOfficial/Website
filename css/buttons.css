@@ -1,0 +1,22 @@
+.btn {
+    border: 4px solid purple;
+    border-radius: 12px;
+    margin: 5px;
+
+    transition: border-color 400ms ease-in-out, background-color 400ms ease-in-out;
+
+    padding: 10px 30px;
+    cursor: pointer;
+
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    border-color: rebeccapurple;
+    background-color: rebeccapurple;
+}
+
+.btnFilled {
+    background-color: purple;
+}
