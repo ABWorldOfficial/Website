@@ -1,23 +1,16 @@
 <html>
     <head>
         <title>ABWorld</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/abworld.css">
-        <link rel="stylesheet" href="css/buttons.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-
-        <!-- JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="js/abworld.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+        <?php include('base/headShared.html') ?>
 
     </head>
     <body>
         
         <div class="pageBg"></div>
         <div class="opening">
-            
             <div class="openingContents">
                 <div class="openingMain">
                     <div class="openingMainImgContainer">
@@ -28,19 +21,8 @@
                     <a class="openingMainProjects btn btnFilled" data-scrollOnClick="true" data-scrollTo=".projects">Projects <img src="img/graphics/smallDownArrow.svg"></a>
                     <a class="openingMainProjects btn" data-scrollOnClick="true" data-scrollTo=".moreInfo">More Info <img src="img/graphics/smallDownArrow.svg"></a>
                 </div>
-                <div class="openingBox warningBox">
-                    <h3>WARNING</h3>
-                    <p>You have JavaScript disabled! Many parts of this site will not work!</p>
-                </div>
-                <a class="openingBox infoBox" href="#">
-                    <h3>INFO</h3>
-                    <p>The redesigned website just launched... Many links don't work at the moment!</p>
-                </a>
-                <div data-scrollOnClick="true" data-scrollTo=".projects" class="openingDown">
-                    <svg width="64" height="35">
-                        <path stroke="#fff" stroke-width="4" fill-opacity="0" d="M 10 10 L 35 30 L 60 10 "></path>
-                    </svg>
-                </div>
+
+                <?php include('base/openingBottom.html') ?>
             </div>
         </div>
 
@@ -117,7 +99,7 @@
                         </div>
                     </div>
                     <div class="sliderBack">
-                        <a class="first allLearnGuides" data-scrollOnClick="true" data-scrollTo=".documentation">
+                        <a class="first allDocsGuides" data-scrollOnClick="true" data-scrollTo=".documentation">
                             <div>View All Docs <img src="img/graphics/smallDownArrow.svg"></div>
                         </a>
                     </div>
@@ -137,7 +119,7 @@
                     </div>
                     
                     <div class="sliderBack">
-                        <a class="first allDocsGuides" data-scrollOnClick="true" data-scrollTo=".documentation">
+                        <a class="first allLearnGuides" data-scrollOnClick="true" data-scrollTo=".documentation">
                             <div>View All Learn Guides <img src="img/graphics/smallDownArrow.svg"></div>
                         </a>
                     </div>
@@ -154,7 +136,7 @@
                             <h2>ABSoftware.ABSave</h2>
                             <div class="tags">
                                 <div class="tag tag-csharp">C#</div>
-                                <div class="tag tag-comingSoon">Beta</div>
+                                <div class="tag tag-comingSoon">Alpha</div>
                                 <div class="tag tag-comingSoon">Page coming soon</div>
                             </div>
                             <p>A serializer/deserializer for <b>ABSave</b>.</p>
@@ -183,8 +165,8 @@
                             <div class="tags">
                                 <div class="tag tag-csharp">C#</div>
                                 <div class="tag tag-cpp">C++</div>
-                                <div class="tag tag-comingSoon">Alpha</div>
-                                <div class="tag tag-comingSoon">Download coming soon</div>
+                                <div class="tag tag-comingSoon">Beta</div>
+                                <div class="tag tag-comingSoon">Page coming soon</div>
                             </div>
                             <p>A utility to create powerful string parsers easily.</p>
                         </div>
@@ -217,11 +199,11 @@
                     </div>
                     
                     <div class="sliderBack">
-                        <a class="first" href="https://github.com/ABSoftwareOfficial/ABSoftware.Core">
-                            <div>Source Code</div>
-                        </a>
                         <a class="second" href="#">
                             <div>Download</div>
+                        </a>
+                        <a class="first" href="https://github.com/ABSoftwareOfficial/ABSoftware.Core">
+                            <div>Source Code</div>
                         </a>
                     </div>
                 </div>
@@ -375,7 +357,7 @@
         </div>
 
         <div class="section copyright">
-            <p>Copyright (C) 2020 Alex Burrows, ABWorld Team</p>
+            <p>Copyright (C) <?php echo date("yy") ?> Alex Burrows, ABWorld Team</p>
         </div>
     </body>
 </html>
